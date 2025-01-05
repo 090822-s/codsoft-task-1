@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+        }
+        header p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .cta-button {
+            background-color: #ff477e;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #f05774;
+        }
+        .content, .features, .testimonials, .newsletter {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            margin: 20px 0;
+            width: 80%;
+            max-width: 800px;
+        }
+        .features, .testimonials {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .content h2, .features h2, .testimonials h2, .newsletter h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .content p, .features p, .testimonials p, .newsletter p {
+            font-size: 20px;
+        }
+        .feature-items, .testimonial-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .feature-item, .testimonial-item {
+            width: 200px;
+            padding: 20px;
+            background-color: #ff477e;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .feature-item h3, .testimonial-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            width: 60%;
+            margin-right: 10px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff477e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Amazing Platform!</h1>
+        <p>Unlock endless possibilities with our new service.</p>
+        <button class="cta-button" onclick="window.location.href='#'">Get Started</button>
+    </header>
+
+    <div class="content">
+        <h2>What We Offer</h2>
+        <p>Our platform provides top-notch tools to help you achieve your goals with ease. Sign up now to get started!</p>
+        <button class="cta-button" onclick="window.location.href='#'">Learn More</button>
+    </div>
+
+    <div class="features">
+        <h2>Features</h2>
+        <p>Explore the unique features that set us apart from the competition.</p>
+        <div class="feature-items">
+            <div class="feature-item">
+                <h3>Feature 1</h3>
+                <p>Benefit from seamless integration with your tools.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 2</h3>
+                <p>Intuitive interface for better user experience.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Feature 3</h3>
+                <p>Access to high-end security and data protection.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>See how our users are benefiting from our platform.</p>
+        <div class="testimonial-items">
+            <div class="testimonial-item">
+                <h3>John Doe</h3>
+                <p>"This platform has revolutionized the way I work. Highly recommended!"</p>
+            </div>
+            <div class="testimonial-item">
+                <h3>Jane Smith</h3>
+                <p>"I can't imagine working without it. It's a game changer."</p>
+            </div>
+            <div class="testimonial-item">
+                <h3>Emily Johnson</h3>
+                <p>"Incredibly user-friendly and efficient. Love it!"</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <h2>Stay Updated!</h2>
+        <p>Sign up for our newsletter and be the first to know about new features, updates, and exclusive offers.</p>
+        <form action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Our Company. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
